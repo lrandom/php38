@@ -1,0 +1,33 @@
+.form-signup{
+    border:1px solid red;
+    width:500px;
+    margin:0px auto;
+}
+
+.form-signup > h5{
+    text-align:center;
+    border:1px solid red;
+    font-size:24px;
+}
+
+.form-signup 
+>form 
+> .form-control 
+>label{
+  display:inline-block;
+  border:1px solid red;
+  width:100px;
+  padding-left:30px;
+}
+
+.form-signup >form >.form-control{
+    margin-top:10px;
+}
+
+.form-signup >form > .form-control
+ input[type="text"],
+ .form-signup >form > .form-control
+ input[type="password"]{
+    width:360px;
+    height:30px
+}
