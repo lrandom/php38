@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="menu">
+        <ul>
+            <li>
+                <a>Home</a>
+            </li>
+
+            <li>
+                <a>Category</a>
+                <ul class="sub-menu">
+                    <li><a>PHP</a></li>
+                    <li><a>JAVA</a></li>
+                    <li><a>JavaScript</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a>Category</a>
+                <ul class="sub-menu">
+                    <li><a>PHP</a></li>
+                    <li><a>JAVA</a></li>
+                    <li><a>JavaScript</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a>Category</a>
+                <ul class="sub-menu">
+                    <li><a>PHP</a></li>
+                    <li><a>JAVA</a></li>
+                    <li><a>JavaScript</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <style>
+        ul {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        .menu {
+            width: 100%;
+            background: red;
+            position: relative;
+        }
+
+        .menu>ul>li {
+            float: left;
+            padding: 10px;
+            background: red;
+            position: relative
+        }
+
+        .menu>ul>li>ul {
+            position: absolute;
+            top: 40px;
+            background: red;
+            display: none;
+        }
+
+        .menu>ul>li:hover .sub-menu {
+            display: block;
+        }
+    </style>
+</body>
+
+</html>
