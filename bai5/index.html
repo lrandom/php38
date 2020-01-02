@@ -1,0 +1,118 @@
+<html>
+
+<head></head>
+
+<body>
+
+</body>
+
+<script type="text/javascript">
+    //Ma javascript here
+    console.log("Hello World");
+    var chuoi1 = "Chuoi 1";
+    var chuoi2 = 'Chuoi 2';
+    var bien3 = 10;
+
+    //noi chuoi
+    /*console.log(chuoi1 + " " + chuoi2 + " " + bien3);
+
+    //noi chuoi bang backstick
+    var chuoi3 = `${chuoi1} ${chuoi2} ${bien3}`;
+    console.log(chuoi3);*/
+
+    /*console.log(1 == '1');
+    console.log(1 === '1');*/
+
+    /*var age = 16;
+    if (age > 18) {
+        document.write('<p>Cho phep lai xe</p>');
+    } else if (age < 50) {
+        document.write('<p>abcd</p>');
+    };
+
+    var age = 10;
+    switch (age) {
+        case 10:
+            document.write('<p>Thieu nhi</p>');
+            break;
+
+        case 16:
+            document.write('<p>Thieu nien</p>');
+            break;
+
+        case 18:
+            document.write('<p>Thanh nien</p>');
+            break;
+
+        default:
+            document.write('<p>Khong biet</p>');
+            break;
+    }*/
+
+    /*var flag = true;
+    if (flag == true) {
+        let number = 10;
+        if (flag == true) {
+            console.log(number);
+        }
+    }
+
+    var flag1 = true;
+    if (flag1 == true) {
+        console.log(number);
+    }*/
+
+    /*for (let index = 0; index < 10; index++) {
+        document.write('<p>' + index + '</p>');
+    }
+
+    var index = 0;
+    do {
+        document.write('<p>' + index + '</p>');
+        index++;
+    } while (index < 10);*/
+
+    /*var index = 0;
+    while (index < 10) {
+        index++;
+        if (index == 5) {
+            continue;
+        }
+        document.write('<p>' + index + '</p>');
+    }*/
+
+    //dinh nghia chuan
+    /*function total(a, b) {
+        return a + b;
+    }
+
+    var sum = total(10, 20);*/
+
+    //anounymous function (ham nac danh)
+    /*var total = function (a, b) {
+        return a + b;
+    }
+
+    var sum = total(10, 30);
+    console.log(sum);
+
+    //su dung tu khoa new
+    var total = new Function('a', 'b', 'var sum = a+b ;return sum');
+
+    //self - invoke function
+    (function () {
+          console.log('Self invoke');
+    })();*/
+
+    var fullName = prompt('Xin cho biet ho ten cua ban');
+    console.log(fullName);
+
+    var confirm = confirm('Ban co chac chan');
+    if (confirm) {
+        alert('Ban da chac chan');
+    } else {
+        alert('Ban da huy hanh dong nay');
+    }
+</script>
+
+</html>
