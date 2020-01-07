@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form name="login" onsubmit="return validate()">
+        <div>
+            <label>Username</label>
+            <input type="text" name="username" id="username" />
+            <div class="error"></div>
+        </div>
+
+        <div>
+            <label>Password</label>
+            <input type="password" name="pwd" />
+
+        </div>
+
+        <input type="submit" value="Login" />
+    </form>
+</body>
+<style>
+    .error {
+        color: red;
+    }
+</style>
+<script>
+    function validate() {
+        let username = document.getElementById('username');
+        if (username.value == '') {
+            username.nextElementSibling.innerHTML = 'Username ko the de trong';
+            return false;
+        }
+
+        let password = document.forms['login'].pwd.value;
+        if (password == '') {
+            alert("Password khong the de trong");
+            return false;
+        }
+    }
+</script>
+
+</html>

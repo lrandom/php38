@@ -1,0 +1,46 @@
+<html>
+
+<head></head>
+
+<body>
+
+</body>
+
+<script>
+    var mang = ["1", 0, "1"];
+    var mang2 = new Array();
+
+    console.log(mang[0]);
+    console.log(mang2);
+
+    for (let index = 0; index < mang.length; index++) {
+        let element = mang[index];
+        console.log(element);
+    }
+
+    mang[1] = 2;
+
+    //Đẩy phần tử mới vào mảng
+    mang2.push("Chuoi nao do");
+    console.log(mang2);
+
+    //Xoa phan tu o cuoi mang
+    mang2.pop();
+    console.log(mang2);
+
+    //Xoá phần tử vào đầu mảng
+    mang2.shift();
+    console.log(mang2);
+
+    //Thêm phần tử vào đầu mảng
+    mang2.unshift();
+    console.log(mang2);
+
+    //noi mang
+    var mangmoi = mang.concat(mang2);
+    console.log(mang2);
+
+
+</script>
+
+</html>

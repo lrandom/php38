@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="demo">ABCD</p>
+
+    <button onclick="changeText()"></button>
+    <script>
+        function changeText() {
+            var demo = document.getElementById("demo");
+            demo.innerHTML = "<span>Hello World</span>";
+            demo.style.backgroundColor = 'red';
+
+
+            let obj = document.createElement('span');
+            obj.innerText = "HIHI";
+            demo.append(obj);
+        }
+
+
+    </script>
+</body>
+
+</html>
