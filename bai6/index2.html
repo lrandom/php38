@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <img id="fullsize" />
+    <img src="" alt="" onclick="changeImage(this)" id="img1">
+    <img src="" alt="" onclick="changeImage(this)" id="img2">
+    <img src="" alt="" onclick="changeImage(this)" id="img3">
+    <img src="" alt="" onclick="changeImage(this)" id="img4">
+</body>
+
+<script>
+    function changeImage(elem) {
+        let src = elem.src;
+        let fullSize = document.getElementById('fullsize');
+        fullSize.src = src;
+    }
+</script>
+
+</html>
