@@ -26,8 +26,11 @@
 <script>
     $(document).ready(function () {
         $('.tab').click(function () {
+            //lay ve class cua content cua tab dang chon
             let dataTab = $(this).attr('data-tab');
+            //an tat ca cac tab
             $('.content').hide();
+            //hien thi noi dung tab đang click
             $('.' + dataTab).show();
         })
     });
