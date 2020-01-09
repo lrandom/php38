@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="tab-wrapper">
+        <div class="tab-header">
+            <span class="tab" data-tab="content-a">Tab A</span>
+            <span class="tab" data-tab="content-b">Tab B</span>
+        </div>
+
+        <div class="tab-content">
+            <div class="content content-a">Content A</div>
+            <div class="content content-b">Content B</div>
+        </div>
+    </div>
+</body>
+
+<script>
+    $(document).ready(function () {
+        $('.tab').click(function () {
+            let dataTab = $(this).attr('data-tab');
+            $('.content').hide();
+            $('.' + dataTab).show();
+        })
+    });
+</script>
+<style>
+    .tab-wrapper .tab-content {
+        position: relative;
+    }
+
+    .tab-wrapper .tab-content div.content {
+        position: absolute;
+    }
+
+    .content-b {
+        display: none;
+    }
+</style>
+
+</html>
