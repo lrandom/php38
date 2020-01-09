@@ -1,0 +1,34 @@
+.btn {
+    position: absolute;
+    bottom: 10px;
+}
+
+.btn-next {
+    left: 50px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.slider ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.slider ul li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider ul li img {
+    width: 500px;
+}
+
+.slider {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    margin: 0px auto;
+}

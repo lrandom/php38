@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="slider">
+        <ul>
+            <li>
+                <img src="./../form.png" />
+            </li>
+
+            <li>
+                <img src="./../form2.png" />
+            </li>
+
+            <li>
+                <img src="./../form3.png" />
+            </li>
+        </ul>
+
+        <a class="btn btn-prev" href="javascript:void()">
+            prev
+        </a>
+
+        <a class="btn btn-next" href="javascript:void()">
+            next
+        </a>
+    </div>
+</body>
+
+<style>
+    .btn {
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .btn-next {
+        left: 50px;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    .slider ul {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .slider ul li {
+        list-style: none;
+        position: absolute;
+    }
+
+    .slider ul li img {
+        width: 500px;
+    }
+
+    .slider {
+        position: relative;
+        width: 500px;
+        height: 300px;
+        margin: 0px auto;
+    }
+</style>
+
+</html>
